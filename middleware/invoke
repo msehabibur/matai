@@ -1,0 +1,9 @@
+#!/bin/sh
+
+/usr/bin/invoke_app "$@" \
+  -C "start_jupyter -A -T @tool matai_v1.ipynb" \
+  -t matai \
+  -u anaconda-7 \
+  -r none \
+  -w headless
+
